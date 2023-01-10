@@ -6,6 +6,12 @@ import (
 	"net/http"
 )
 
+func Sur(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, `
+	<h1>Sur</h1>
+	`)
+}
+
 func Sup(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, `
 	<h1>Sup</h1>
