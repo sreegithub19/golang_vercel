@@ -1,4 +1,4 @@
-Commands to run and deploy:
+Commands to run and deploy are:
 
 - mkdir golang_vercel/
 - cd golang_vercel/
