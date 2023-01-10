@@ -10,6 +10,7 @@ func Sur(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, `
 	<h1>Sur</h1>
 	`)
+	http.HandleFunc("/sup", Sup)
 }
 
 func Sup(w http.ResponseWriter, r *http.Request) {
