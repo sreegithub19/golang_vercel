@@ -7,10 +7,14 @@ import (
 
 func Sur(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, `
+	<div>
 	<h1>Sur</h1>
+	</div>
 	`)
 	fmt.Fprintf(w, `
+	<div>
 	<h1>Surrr</h1>
+	</div>
 	`)
 }
 
