@@ -10295,7 +10295,7 @@
 // 	app.ServeHTTP(w, r)
 // }
 
-package main
+package api
 
 import (
 	"fmt"
@@ -10307,7 +10307,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "<h1>Hi</h1>")
 }
 
-func main() {
+func Main() {
 	http.HandleFunc("/", handler)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
