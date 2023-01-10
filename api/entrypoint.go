@@ -37,7 +37,7 @@ func myRoute(r *gin.RouterGroup) {
 	<li><a href='/codepen'>Codepen</a></li>
    </ul> </div> 
        </div> </body> </html>
-		`)
+		`, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/chess", func(c *gin.Context) {
@@ -1249,7 +1249,7 @@ func myRoute(r *gin.RouterGroup) {
     </body>
 
     </html>
-    `)
+    `, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/calculator", func(c *gin.Context) {
@@ -1491,7 +1491,7 @@ func myRoute(r *gin.RouterGroup) {
     </script>
     </body>
     </html>
-    `)
+    `, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/maze", func(c *gin.Context) {
@@ -2292,7 +2292,7 @@ func myRoute(r *gin.RouterGroup) {
         </script>
       </body>
     </html>
-    `)
+    `, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/sass_", func(c *gin.Context) {
@@ -2336,7 +2336,7 @@ body{
         <h1 id="hello">Hello, this is styled using SCSS.</h1>
     </body>
 </html>
-    `)
+    `, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/codepen", func(c *gin.Context) {
@@ -2395,7 +2395,7 @@ body{
     <\/script>
 </body>
 </html>
-`)
+`, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/tilt_maze", func(c *gin.Context) {
@@ -3390,7 +3390,7 @@ function main(timestamp) {
 </script>
 </body>
 </html>
-`)
+`, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/dino", func(c *gin.Context) {
@@ -6023,7 +6023,7 @@ html[subframe] body {
 </body>
 
 </html>
-`)
+`, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/solitaire", func(c *gin.Context) {
@@ -7592,7 +7592,7 @@ html[subframe] body {
 </script>
 </html>
 
-    `)
+    `, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/sudoku", func(c *gin.Context) {
@@ -9382,7 +9382,7 @@ addEventListener('DOMContentLoaded', initialize, false);
     </script>
 </body>
 </html>
-    `)
+    `, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/puzzles", func(c *gin.Context) {
@@ -9647,7 +9647,7 @@ return this;
     </div>
 </body>
 </html>
-`)
+`, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/tic_tac_toe", func(c *gin.Context) {
@@ -9780,7 +9780,7 @@ function handleRestartGame() {
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
         </script>
-    </body>`)
+    </body>`, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/clock", func(c *gin.Context) {
@@ -9902,7 +9902,7 @@ function drawHand(ctx, pos, length, width){
 }
     </script>
 </body>
-    `)
+    `, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/hangman", func(c *gin.Context) {
@@ -10087,7 +10087,7 @@ startGame()
     </script>
 </body>
 </html>
-    `)
+    `, gin.H{"title": "Main website"})
 	})
 
 	r.GET("/virtual_keyboard", func(c *gin.Context) {
@@ -10303,7 +10303,7 @@ startGame()
     
     </script>
     </html>
-    `)
+    `, gin.H{"title": "Main website"})
 	})
 }
 
