@@ -14,14 +14,11 @@ func Sub(w http.ResponseWriter, r *http.Request) {
 
 func Super(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, `
-	<h1>Sub</h1>
+	<h1>Super</h1>
 	`)
 }
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, `
-	<h1>Hi</h1>
-	`)
 	http.HandleFunc("/super", Super)
 	http.HandleFunc("/sub", Sub)
 	log.Fatal(http.ListenAndServe(":8080", nil))
