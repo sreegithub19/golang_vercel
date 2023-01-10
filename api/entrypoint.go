@@ -14,7 +14,15 @@ var (
 
 func myRoute(r *gin.RouterGroup) {
 	r.GET("/admin", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello from golang in vercel")
+		c.String(http.StatusOK, `
+		Hello admin from golang in vercel
+		`)
+	})
+
+	r.GET("/", func(c *gin.Context) {
+		c.String(http.StatusOK, `
+		Hello from golang in vercel
+		`)
 	})
 }
 
