@@ -10295,7 +10295,7 @@
 // 	app.ServeHTTP(w, r)
 // }
 
-package api
+package main
 
 import (
 	"fmt"
