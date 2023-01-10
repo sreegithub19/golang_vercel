@@ -14,7 +14,7 @@ var (
 
 func myRoute(r *gin.RouterGroup) {
 	r.GET("/applications", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
 		<!DOCTYPE html> <html> <head> <meta name="viewport" content="width=device-width, initial-scale=1"> <style> body, html { height: 100%; margin: 0; } .content { position: absolute; top: 15%; left:25%; background: rgb(0, 0, 0); /* Fallback color */ background: rgba(0, 0, 0, 0.76); /* Black background with 0.5 opacity */ color: #f1f1f1; width: 50%; padding: 20px; } .bg { /* The image used */ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRqNquWxQHJAPgugDwzXokAU_dQUXzknUTA&usqp=CAU"); /* Full height */ height: 100%; /* Center and scale the image nicely */ background-position: center; background-repeat: no-repeat; background-size: cover; } table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; } div.parent { text-align: center; } ul { display: inline-block; text-align: left; }</style>
     </head> <body> <div class="bg"></div>  <div class="content"> <h1 id="home" 
         style="text-align: center;font-weight: bold;text-decoration: underline;">
@@ -41,7 +41,7 @@ func myRoute(r *gin.RouterGroup) {
 	})
 
 	r.GET("/chess", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
 <!DOCTYPE html>
 <html>
 
@@ -1253,7 +1253,7 @@ func myRoute(r *gin.RouterGroup) {
 	})
 
 	r.GET("/calculator", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
         <html>
     <head>
     <style>
@@ -1495,7 +1495,7 @@ func myRoute(r *gin.RouterGroup) {
 	})
 
 	r.GET("/maze", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
 <html lang="en-GB">
     <head>
       <meta charset="utf-8">
@@ -2296,7 +2296,7 @@ func myRoute(r *gin.RouterGroup) {
 	})
 
 	r.GET("/sass_", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
 <!DOCTYPE html>
 <html>
     <head>
@@ -2340,7 +2340,7 @@ body{
 	})
 
 	r.GET("/codepen", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
 <!DOCTYPE html>
 <html>
 <head>
@@ -2399,7 +2399,7 @@ body{
 	})
 
 	r.GET("/tilt_maze", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
 <!DOCTYPE html>
 <html>
 <head>
@@ -3394,7 +3394,7 @@ function main(timestamp) {
 	})
 
 	r.GET("/dino", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
     
 <html>
 
@@ -6027,7 +6027,7 @@ html[subframe] body {
 	})
 
 	r.GET("/solitaire", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
 <html>
 <head>
         <meta name="viewport" id="metaWidth" content="width=530,user-scalable=no">
@@ -7596,7 +7596,7 @@ html[subframe] body {
 	})
 
 	r.GET("/sudoku", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
     <html>
 <head>
     <!-- Copyright (c) Microsoft Corporation. All Rights Reserved. -->
@@ -9386,7 +9386,7 @@ addEventListener('DOMContentLoaded', initialize, false);
 	})
 
 	r.GET("/puzzles", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
 <!DOCTYPE html>
 <html>
 <head>
@@ -9651,7 +9651,7 @@ return this;
 	})
 
 	r.GET("/tic_tac_toe", func(c *gin.Context) {
-		c.String(http.StatusOK, `<!doctype html>
+		c.HTML(http.StatusOK, `<!doctype html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9784,7 +9784,7 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
 	})
 
 	r.GET("/clock", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
     
 <!DOCTYPE html>
 <html lang="en">
@@ -10091,7 +10091,7 @@ startGame()
 	})
 
 	r.GET("/virtual_keyboard", func(c *gin.Context) {
-		c.String(http.StatusOK, `<!DOCTYPE html>
+		c.HTML(http.StatusOK, `<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
