@@ -19,9 +19,9 @@ func myRoute(r *gin.RouterGroup) {
 		`)
 	})
 
-	r.GET("/", func(c *gin.Context) {
+	r.GET("/applications", func(c *gin.Context) {
 		c.String(http.StatusOK, `
-		Hello from golang in vercel
+		Hello applications from golang in vercel
 		`)
 	})
 }
