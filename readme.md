@@ -6,6 +6,6 @@ Commands to run and deploy:
 - go get github.com/gin-gonic/gin
 - Fill code in folder accordingly
 
-- git add . && git commit -m "C" && git push origin main && vercel .
+- git add . && git commit -m "C" && git push origin main && vercel . && vercel --prod
 
 - URL to check: https://golang-vercel-ten.vercel.app/api/admin
