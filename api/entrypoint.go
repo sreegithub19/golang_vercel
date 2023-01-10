@@ -9906,7 +9906,7 @@ function drawHand(ctx, pos, length, width){
 	})
 
 	r.GET("/hangman", func(c *gin.Context) {
-		c.String(http.StatusOK, `
+		c.HTML(http.StatusOK, `
     <!DOCTYPE html>
 <html lang="en">
 <head>
