@@ -2301,65 +2301,65 @@ func myRoute(r *gin.RouterGroup) {
     `))
 	})
 
-	r.GET("/tic_tac_toe", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/tic_tac_toe", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/clock", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/clock", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/hangman", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/hangman", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/puzzles", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/puzzles", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/calculator", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/calculator", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/sudoku", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/sudoku", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/virtual_keyboard", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/virtual_keyboard", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/solitaire", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/solitaire", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/dino", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/dino", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/sass_", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/sass_", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/tilt_maze", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/tilt_maze", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 
-	r.GET("/codepen", func(c *gin.Context) {
-		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-    `))
-	})
+	// r.GET("/codepen", func(c *gin.Context) {
+	// 	c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+	//   `))
+	// })
 }
 
 func init() {
