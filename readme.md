@@ -12,4 +12,5 @@ Commands to run and deploy are:
 
 - Reference:
   - https://github.com/gin-gonic/gin
-  -
+  - https://www.youtube.com/watch?v=jsdyAWc_x08
+  - https://github.com/bobwatcherx/goDeployVercel
