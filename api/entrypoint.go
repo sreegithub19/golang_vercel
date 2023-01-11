@@ -16,7 +16,7 @@ const (
 	ContentTypeText   = "text/plain; charset=utf-8"
 )
 
-func main() {
+func Handler() {
 	r := gin.Default()
 	r.GET("/ping", func(c *gin.Context) {
 		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
@@ -29,4 +29,8 @@ func main() {
         `))
 	})
 	r.Run() // listen and serve on http://localhost:8080/ping
+}
+
+func main() {
+	Handler()
 }
