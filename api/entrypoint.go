@@ -10,11 +10,19 @@ var (
 	app *gin.Engine
 )
 
-// CREATE ENDPOIND
+const (
+	ContentTypeBinary = "application/octet-stream"
+	ContentTypeForm   = "application/x-www-form-urlencoded"
+	ContentTypeJSON   = "application/json"
+	ContentTypeHTML   = "text/html; charset=utf-8"
+	ContentTypeText   = "text/plain; charset=utf-8"
+)
 
 func myRoute(r *gin.RouterGroup) {
 	r.GET("/admin", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello from golang in vercel")
+		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+        <html><h1>Hi ping</h1></html>
+        `))
 	})
 }
 
