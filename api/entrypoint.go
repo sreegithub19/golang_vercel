@@ -30,7 +30,3 @@ func Handler() {
 	})
 	r.Run() // listen and serve on http://localhost:8080/ping
 }
-
-func main() {
-	Handler()
-}
