@@ -21,6 +21,7 @@ const (
 func myRoute(r *gin.RouterGroup) {
 	r.GET("/chess", func(c *gin.Context) {
 		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
+<!DOCTYPE html>
 <html>
 
     <head>
@@ -1205,7 +1206,7 @@ func myRoute(r *gin.RouterGroup) {
                     }
                 }
             }
-<\/script>
+</script>
         <div id="blackkill">
             <p id="bpawn"></p>
             <p id="brook"></p>
