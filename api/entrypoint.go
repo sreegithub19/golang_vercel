@@ -21,7 +21,6 @@ const (
 func myRoute(r *gin.RouterGroup) {
 	r.GET("/chess", func(c *gin.Context) {
 		c.Data(http.StatusOK, ContentTypeHTML, []byte(`
-<!DOCTYPE html>
 <html>
 
     <head>
