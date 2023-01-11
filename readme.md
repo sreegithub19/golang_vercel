@@ -8,7 +8,7 @@ Commands to run and deploy are:
 
 - git add . && git commit -m "C" && git push origin main && vercel . && vercel --prod
 
-- URL to check: https://golang-vercel-ten.vercel.app/api
+- URL to check : https://golang-vercel-ten.vercel.app/api
 
 - Reference:
   - https://github.com/gin-gonic/gin
