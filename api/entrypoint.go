@@ -1239,20 +1239,20 @@ func myRoute(r *gin.RouterGroup) {
             WELCOME TO JAVASCRIPT APPLICATIONS!!</h1> 
    <h3 style="text-align:center;"> Click on any of the below JavaScript apps!</h3>
    <div class="parent"> <ul>
-        <li><a href='/calculator'>Calculator</a></li> 
-       <li><a href='/maze'>Maze</a></li>
-        <li><a href='/tic_tac_toe'>Tic-tac-toe</a></li>
-        <li><a href='/clock'>Analogue clock</a></li>
-        <li><a href='/hangman'>Hangman</a></li>
-        <li><a href='/puzzles'>Estonian puzzles</a></li>
-        <li><a href='/sudoku'>Sudoku</a></li>
-        <li><a href='/virtual_keyboard'>Virtual keyboard</a></li>
-	<li><a href='/solitaire'>Solitaire</a></li>
-	<li><a href='/chess'>Chess</a></li>
-	<li><a href='/dino'>Dino</a></li>
-	<li><a href='/sass_'>Sass</a></li>
-	<li><a href='/tilt_maze'>Tilted Maze</a></li>
-	<li><a href='/codepen'>Codepen</a></li>
+        <li><a href='/api/calculator'>Calculator</a></li> 
+       <li><a href='/api/maze'>Maze</a></li>
+        <li><a href='/api/tic_tac_toe'>Tic-tac-toe</a></li>
+        <li><a href='/api/clock'>Analogue clock</a></li>
+        <li><a href='/api/hangman'>Hangman</a></li>
+        <li><a href='/api/puzzles'>Estonian puzzles</a></li>
+        <li><a href='/api/sudoku'>Sudoku</a></li>
+        <li><a href='/api/virtual_keyboard'>Virtual keyboard</a></li>
+	<li><a href='/api/solitaire'>Solitaire</a></li>
+	<li><a href='/api/chess'>Chess</a></li>
+	<li><a href='/api/dino'>Dino</a></li>
+	<li><a href='/api/sass_'>Sass</a></li>
+	<li><a href='/api/tilt_maze'>Tilted Maze</a></li>
+	<li><a href='/api/codepen'>Codepen</a></li>
    </ul> </div> 
        </div> </body> </html>
     `))
