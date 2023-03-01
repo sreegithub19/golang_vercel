@@ -1428,7 +1428,7 @@ func myRoute(r *gin.RouterGroup) {
       } else if (operator) {
         const result = calculate(firstOperand, inputValue, operator);
     
-        calculator.displayValue = `+"`"+`\${parseFloat(result.toFixed(7))}`+"`"+`;
+        calculator.displayValue = `+"`"+`${parseFloat(result.toFixed(7))}`+"`"+`;
         calculator.firstOperand = result;
       }
     
@@ -2362,9 +2362,9 @@ func myRoute(r *gin.RouterGroup) {
 let gameActive = true;
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
-const winningMessage = () => `+"`"+`Player \${currentPlayer} has won!`+"`"+`;
+const winningMessage = () => `+"`"+`Player ${currentPlayer} has won!`+"`"+`;
 const drawMessage = () => `+"`"+`Game ended in a draw!`+"`"+`;
-const currentPlayerTurn = () => `+"`"+`It's \${currentPlayer}'s turn`+"`"+`;
+const currentPlayerTurn = () => `+"`"+`It's ${currentPlayer}'s turn`+"`"+`;
 statusDisplay.innerHTML = currentPlayerTurn();
 const winningConditions = [
     [0, 1, 2],
@@ -2634,7 +2634,7 @@ p {
     </div>
     <script>
     const getPuzzle = async (wordCount) => {
-        const response = await fetch(`+"`"+`https://puzzle.mead.io/puzzle?wordCount=\${wordCount}`+"`"+`)
+        const response = await fetch(`+"`"+`https://puzzle.mead.io/puzzle?wordCount=${wordCount}`+"`"+`)
             if (response.status === 200){
                 const data = await response.json()
                 return data.puzzle
@@ -2683,9 +2683,9 @@ p {
     
         get statusMessage(){
             if (this.status === 'playing'){
-                return `+"`"+`Guesses left: \${this.remainingGuesses}`+"`"+`
+                return `+"`"+`Guesses left: ${this.remainingGuesses}`+"`"+`
             } else if (this.status === 'failed') {
-                return `+"`"+`Nice try! The word was "\${this.word.join('')}" `+"`"+`
+                return `+"`"+`Nice try! The word was "${this.word.join('')}" `+"`"+`
             } else {
                 return 'Great work! You guessed the word!'
             }
@@ -9552,20 +9552,7 @@ a:visited {
     </div>
   </div>
 </div>
-<a id="youtube" href="https://youtu.be/bTk6dcAckuI" target="_blank">
-  <span>See how this game was made</span>
-</a>
-<div id="youtube-card">
-  How to simulate ball movement in a maze with JavaScript
-</div>
 <script>
-    /*
-
-If you want to know how this game works, you can find a source code walkthrough video here: https://youtu.be/bTk6dcAckuI
-
-Follow me on twitter for more: https://twitter.com/HunorBorbely
-
-*/
 
 Math.minmax = (value, limit) => {
   return Math.max(Math.min(value, limit), -limit);
@@ -9677,7 +9664,7 @@ resetGame();
 balls.forEach(({ x, y }) => {
   const ball = document.createElement("div");
   ball.setAttribute("class", "ball");
-  ball.style.cssText = `+"`"+`left: \${x}px; top: \${y}px; `+"`"+`;
+  ball.style.cssText = `+"`"+`left: ${x}px; top: ${y}px; `+"`"+`;
 
   mazeElement.appendChild(ball);
   ballElements.push(ball);
@@ -9781,11 +9768,11 @@ walls.forEach(({ x, y, horizontal, length }) => {
   const wall = document.createElement("div");
   wall.setAttribute("class", "wall");
   wall.style.cssText = `+"`"+`
-      left: \${x}px;
-      top: \${y}px;
-      width: \${wallW}px;
-      height: \${length}px;
-      transform: rotate(\${horizontal ? -90 : 0}deg);
+      left: ${x}px;
+      top: ${y}px;
+      width: ${wallW}px;
+      height: ${length}px;
+      transform: rotate(${horizontal ? -90 : 0}deg);
     `+"`"+`;
 
   mazeElement.appendChild(wall);
@@ -9825,8 +9812,8 @@ window.addEventListener("mousemove", function (event) {
     const mouseDeltaY = -Math.minmax(mouseStartY - event.clientY, 15);
 
     joystickHeadElement.style.cssText = `+"`"+`
-        left: \${mouseDeltaX}px;
-        top: \${mouseDeltaY}px;
+        left: ${mouseDeltaX}px;
+        top: ${mouseDeltaY}px;
         animation: none;
         cursor: grabbing;
       `+"`"+`;
@@ -9835,7 +9822,7 @@ window.addEventListener("mousemove", function (event) {
     const rotationX = mouseDeltaY * 0.8;
 
     mazeElement.style.cssText = `+"`"+`
-        transform: rotateY(\${rotationY}deg) rotateX(\${-rotationX}deg)
+        transform: rotateY(${rotationY}deg) rotateX(${-rotationX}deg)
       `+"`"+`;
 
     const gravity = 2;
@@ -9920,7 +9907,7 @@ function resetGame() {
 
   if (ballElements.length) {
     balls.forEach(({ x, y }, index) => {
-      ballElements[index].style.cssText = `+"`"+`left: \${x}px; top: \${y}px; `+"`"+`;
+      ballElements[index].style.cssText = `+"`"+`left: ${x}px; top: ${y}px; `+"`"+`;
     });
   }
 
@@ -9935,7 +9922,7 @@ function resetGame() {
     holes.forEach(({ x, y }) => {
       const ball = document.createElement("div");
       ball.setAttribute("class", "black-hole");
-      ball.style.cssText = `+"`"+`left: \${x}px; top: \${y}px; `+"`"+`;
+      ball.style.cssText = `+"`"+`left: ${x}px; top: ${y}px; `+"`"+`;
 
       mazeElement.appendChild(ball);
       holeElements.push(ball);
@@ -10211,7 +10198,7 @@ function main(timestamp) {
 
       // Move balls to their new position on the UI
       balls.forEach(({ x, y }, index) => {
-        ballElements[index].style.cssText = `+"`"+`left: \${x}px; top: \${y}px; `+"`"+`;
+        ballElements[index].style.cssText = `+"`"+`left: ${x}px; top: ${y}px; `+"`"+`;
       });
     }
 
@@ -10222,7 +10209,7 @@ function main(timestamp) {
       )
     ) {
       noteElement.innerHTML = `+"`"+`Congrats, you did it!
-        \${!hardMode ? "<p>Press H for hard mode</p>" : ""}
+        ${!hardMode ? "<p>Press H for hard mode</p>" : ""}
         <p>
           Follow me
           <a href="https://twitter.com/HunorBorbely" , target="_blank"
