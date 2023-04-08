@@ -1244,7 +1244,7 @@ func myRoute(r *gin.RouterGroup) {
         <li><a href='/api/tic_tac_toe'>Tic-tac-toe</a></li>
         <li><a href='/api/clock'>Analogue clock</a></li>
         <li><a href='/api/hangman'>Hangman</a></li>
-        <li><a href='/api/puzzles'>Estonian puzzles</a></li>
+        <li><a href='/api/puzzles'>Puzzles</a></li>
         <li><a href='/api/sudoku'>Sudoku</a></li>
         <li><a href='/api/virtual_keyboard'>Virtual keyboard</a></li>
 	<li><a href='/api/solitaire'>Solitaire</a></li>
@@ -2976,11 +2976,11 @@ return this;
 
     <script>
     var images = [
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/neeruti.jpg', title: 'Neeruti manor' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/harju_madise.jpg', title: 'Harju-Madis Church' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/rahumae.jpg', title: 'Rahumäe train station' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/kakumae.jpg', title: 'Kakumäe Harbor' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/kohila.jpg', title: 'Kohila mill' }
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/neeruti.jpg', title: 'Puzzle_1' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/harju_madise.jpg', title: 'Puzzle_2' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/rahumae.jpg', title: 'Puzzle_3' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/kakumae.jpg', title: 'Puzzle_4' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/kohila.jpg', title: 'Puzzle_5' }
     ];
     
     $(function () {
@@ -9468,7 +9468,6 @@ a:visited {
 }
 
 @media (min-height: 425px) {
-  /** Youtube logo by https://codepen.io/alvaromontoro */
   #youtube {
     z-index: 2;
     display: block;
@@ -10211,10 +10210,6 @@ function main(timestamp) {
       noteElement.innerHTML = `+"`"+`Congrats, you did it!
         ${!hardMode ? "<p>Press H for hard mode</p>" : ""}
         <p>
-          Follow me
-          <a href="https://twitter.com/HunorBorbely" , target="_blank"
-            >@HunorBorbely</a
-          >
         </p>`+"`"+`;
       noteElement.style.opacity = 1;
       gameInProgress = false;
