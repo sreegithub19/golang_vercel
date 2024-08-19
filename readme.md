@@ -2,6 +2,8 @@ Commands to run and deploy are:
 
 - mkdir golang_vercel/
 - cd golang_vercel/
+- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+- brew install go
 - go mod init myapp
 - go get github.com/gin-gonic/gin
 - Fill code in folder accordingly
@@ -10,7 +12,7 @@ Commands to run and deploy are:
   (or)
   git add . && git commit -m "C" && git push origin main && vercel --prod
 
-- URL to check : https://golang-vercel-ten.vercel.app/api
+- URL to check : https://golang-vercel-ten.vercel.app/api/applications
 
 - Reference:
   - https://github.com/gin-gonic/gin
